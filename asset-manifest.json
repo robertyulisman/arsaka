@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/arsaka/static/css/main.dcadb10b.css",
+    "main.js": "/arsaka/static/js/main.b9f46b3f.js",
+    "static/media/background1.png": "/arsaka/static/media/background1.4f9e7dda089b15261af1.png",
+    "static/media/ship.png": "/arsaka/static/media/ship.eed677f5224fbd28a12b.png",
+    "static/media/single.png": "/arsaka/static/media/single.20196aa3e7e7fa48f8f7.png",
+    "static/media/double.png": "/arsaka/static/media/double.8be045e6bb88be63d414.png",
+    "static/media/triple.png": "/arsaka/static/media/triple.4eb8f19f4b4647321484.png",
+    "static/media/logo.png": "/arsaka/static/media/logo.a3b3a23ec9c201f87017.png",
+    "index.html": "/arsaka/index.html",
+    "main.dcadb10b.css.map": "/arsaka/static/css/main.dcadb10b.css.map",
+    "main.b9f46b3f.js.map": "/arsaka/static/js/main.b9f46b3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcadb10b.css",
+    "static/js/main.b9f46b3f.js"
+  ]
+}
