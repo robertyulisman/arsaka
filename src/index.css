@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ 
+  background: rgb(253, 253, 253) url("./assets/background1.png") no-repeat scroll;
+  background-color: #000300;
+}
