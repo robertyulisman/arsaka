@@ -2,8 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
- 
-  background: rgb(253, 253, 253) url("./assets/background1.png") no-repeat scroll;
-  background-color: #000300;
+#home {
+  background: rgb(253, 253, 253) url("./assets/background1.png") no-repeat
+    center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #0d141f;
+  background-attachment: fixed;
+}
+
+#home_company {
+  background: rgb(253, 253, 253) url("./assets/background/1.jpg") no-repeat
+    scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #0d141f;
+  background-attachment: fixed;
+}
+
+#about_company {
+  background: rgb(253, 253, 253) url("./assets/background/about.jpg") no-repeat
+    bottom scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #0d141f;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1300px) {
+  #home {
+    background: rgb(253, 253, 253) url("./assets/background1.png") no-repeat
+      scroll;
+
+    background-color: #0d141f;
+    background-attachment: fixed;
+  }
+}
+
+.app__background_nav {
+  backdrop-filter: blur(5px);
+  background-color: theme(colors.primary.one / 70%);
 }
