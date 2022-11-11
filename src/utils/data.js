@@ -1,6 +1,6 @@
 import LogoArsaka from "../assets/logo.png";
 import LogoMadiha from "../assets/logoMadiha.png";
-import LogoTrimitri from "../assets/logoMadiha.png";
+import LogoTrimitri from "../assets/logoTrimitra.png";
 
 import Service1 from "../assets/services/1.jpg";
 import Service2 from "../assets/services/2.jpg";
@@ -11,13 +11,13 @@ const company = [
     _id: 1,
     logo: LogoArsaka,
     key: "arsaka",
-    nama: "Pt. Arsaka",
+    nama: "PT. Arsaka Lintas Samudra",
     deskripsiPendek:
-      "The company is engaged in ship agency services include the maintenance needs of the ship that will sail and which will be",
+      "Ship Operator (LCT, Tug & Barge, Cargo Vessel), Shipping Agency, Project Mobilization",
     alamat:
-      "Komplek Century Park Blok a No. 6, Batam Center - Batam, Kepulauan Riau",
+      "Jl. Sudirman Komp. Ruko DErmaga Sukajadi Blok RE No. 3 Batam, Kepulauan Riau - Indonesia 29444",
     telephone: "+62 778 – 468205",
-    fax: "+62 778 – 468205",
+    fax: "+62 778 – 427909",
     location: {
       lat: 1.14526,
       lng: 104.01863,
@@ -36,8 +36,8 @@ const company = [
         teks: "The purpose of the establishment of PT. Arsaka is to support Government’s program to expand and improve the distribution of goods, considering the territorial waters of Indonesia are very spacious with thousands of islands and thus requires a lot of support from the national shipping companies.",
       },
     ],
-    visi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
-    misi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
+    visi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
+    misi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
     services: [
       {
         _id: "services-1",
@@ -66,9 +66,9 @@ const company = [
     _id: 2,
     key: "madiha",
     logo: LogoMadiha,
-    nama: "Pt. Madiha",
+    nama: "PT. Madiha Kastara Sejahtera",
     deskripsiPendek:
-      "The company is engaged in ship agency services include the maintenance needs of the ship that will sail and which will be",
+      "Pengurusan Bongkar Muat Disyah Bandar, UPP, Bea Cukai, Pengurusan Pelayanan Jasa Kepabeanan, Pengurusan Perizinan BP Laut",
     alamat:
       "Komplek Century Park Blok a No. 6, Batam Center - Batam, Kepulauan Riau",
     telephone: "+62 778 – 468205",
@@ -121,9 +121,9 @@ const company = [
     _id: 3,
     key: "trimitri",
     logo: LogoTrimitri,
-    nama: "Pt. trimitra mandiri logistic",
+    nama: "PT. Trimitra Mandiri Logistic",
     deskripsiPendek:
-      "The company is engaged in ship agency services include the maintenance needs of the ship that will sail and which will be",
+      "Pengurusan Dokumen PPFTZ 01 (TLDDP, Import/ Export), Pengurusan Dokumen PPFTZ 02, Pengurusan Dokumen PPFTZ 03",
     alamat:
       "Komplek Century Park Blok a No. 6, Batam Center - Batam, Kepulauan Riau",
     telephone: "+62 778 – 468205",
