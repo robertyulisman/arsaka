@@ -12,16 +12,16 @@ const Company = () => {
   return (
     <div>
       <Tabs data={data}>
-        <div label="Home">
+        <div label="Beranda">
           <Dashboard data={data} />
         </div>
-        <div label="About">
+        <div label="Tentang">
           <AboutCompany data={data} />
         </div>
         <div label="Gallery">
           <GalleryCompany data={data} />
         </div>
-        <div label="Fleets">
+        <div label="Armada">
           Nothing to see here, this tab is <em>extinct</em>!
         </div>
       </Tabs>

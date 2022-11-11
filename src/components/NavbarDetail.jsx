@@ -79,7 +79,7 @@ const NavbarDetail = ({ home, about, fleets, data }) => {
               home ? "text-secondary-one" : "text-slate-900"
             } `}
           >
-            Home
+            Beranda
           </span>
           <span
             onClick={() => handleNavigation("about")}
@@ -87,7 +87,7 @@ const NavbarDetail = ({ home, about, fleets, data }) => {
               about ? "text-secondary-one" : "text-slate-900"
             } `}
           >
-            About
+            Tentang
           </span>
           <div
             className=" relative flex items-center"
@@ -99,7 +99,7 @@ const NavbarDetail = ({ home, about, fleets, data }) => {
                 fleets ? "text-secondary-one" : "text-slate-900"
               } `}
             >
-              Fleets
+              Armada
             </span>
             <FaAngleDown size={16} className="hover:cursor-pointer ml-2" />
             {show && (

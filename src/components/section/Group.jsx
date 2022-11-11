@@ -21,7 +21,7 @@ const Group = () => {
         {company.map((item) => (
           <div className="w-full shadow-xl bg-gray-100 flex flex-col p-4 my-4 md:my-0 rounded-lg hover:scale-105 duration-300">
             <img
-              className="h-20 mx-auto  bg-transparent"
+              className="h-20 mt-10 mx-auto  bg-transparent"
               src={item.logo}
               alt="/"
             />

@@ -8,15 +8,15 @@ const About = () => {
         <div className="flex flex-col justify-center">
           <p className="text-[#F38E16] font-bold text-2xl">TENTANG KAMI</p>
           <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold py-4">
-            One Stop Service Shipping Agent
+            One Stop Service Shipping Agency
           </h1>
           <p className="md:text-2xl sm:text-2xl text-xl text-gray-400">
-          Perusahaan afiliasi yang telah berdiri sejak tahun 2002, dan
-            anggota asosiasi pemilik kapal Indonesia (INSA) Batam.
+          Perusahaan Ship Agency yang telah berdiri sejak tahun 2021, dan
+            telah mengerjakan banyak Projek dan menjadi kepercayaan beberapa Klient kami dalam urusan Bongkar Muat, Pengurusan Dokumen dokumen serta Pengurusan Sertifikasi Kapal.
           </p>
-          <button className="bg-[#1E2734] text-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
+          {/* <button className="bg-[#1E2734] text-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
             Selengkapnya
-          </button>
+          </button> */}
         </div>
         <img className="w-[500px] mx-auto my-4" src={Ship} alt="/" />
       </div>

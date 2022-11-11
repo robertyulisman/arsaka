@@ -21,12 +21,10 @@ const Footer = () => {
             onClick={handleScrolltoTop}
             className="w-full text-3xl font-bold text-[#F38E16] hover:cursor-pointer"
           >
-            ARSAKA GROUP
+            ARSAKA GROUP.
           </h1>
           <p className="py-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-            ullam iste repellat consequatur libero reiciendis, blanditiis
-            accusantium.
+          Berpengalaman Dalam Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing.
           </p>
           <div className="flex gap-4  md:w-[75%] my-6">
             <FaFacebookSquare

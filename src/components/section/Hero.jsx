@@ -9,19 +9,19 @@ const Hero = () => {
     <div id="home">
       <div className="text-white bg-gradient-to-t from-[#12171f] to-[rgba(0, 0, 0, 0.2)]">
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-4 mb-4">
             <img
-              className="w-auto h-[70px]  bg-transparent "
+              className="w-auto h-[70px]  bg-transparent hover:scale-110 hover:duration-200 hover:ease-in-out"
               src={Logo}
               alt="/"
             />
             <img
-              className="w-auto h-[70px]  bg-transparent bg-white rounded-md p-1"
+              className="w-auto h-[70px]  bg-transparent  p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
               src={Madiha}
               alt="/"
             />
             <img
-              className="w-auto h-[70px]  bg-white rounded-md p-1"
+              className="w-auto h-[70px]   rounded-md p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
               src={Trimitra}
               alt="/"
             />
@@ -48,9 +48,9 @@ const Hero = () => {
             Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan
             Lokal dan Asing.
           </p>
-          <button className="bg-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
+          {/* <button className="bg-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
             Get Started
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

@@ -37,17 +37,17 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
         {/* <img className="w-20 mx-auto  bg-transparent" src={Logo} alt="/" /> */}
         <h1 className="w-full text-3xl font-bold text-[#F38E16]">
-          ARSAKA GROUP
+          ARSAKA GROUP.
         </h1>
         <ul className="hidden md:flex">
           <Link to="home" smooth={true}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Home
+              Beranda
             </li>
           </Link>
           <Link to="about" smooth={true}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              About
+              Tentang
             </li>
           </Link>
           <Link to="group" smooth={true}>
@@ -66,22 +66,22 @@ const Navbar = () => {
           </Link>
           <Link to="contact" smooth={true} offset={-100}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Contact
+              Kontak
             </li>
           </Link>
         </ul>
-        <div onClick={handleNav} className="block md:hidden">
+        <div onClick={handleNav} className="block md:hidden ">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <ul
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-[#1E2734] bg-[#1E2734] ease-in-out duration-500"
+              ? "fixed left-0 top-0 w-[60%] h-[100vh] border-r border-r-[#1E2734] bg-[#1E2734] ease-in-out duration-500 z-[999]"
               : "ease-in-out duration-500 fixed left-[-100%] top-0 bottom-0"
           }
         >
           <h1 className="w-full text-3xl font-bold text-[#F38E16] m-4">
-            PT ARSAKA
+            PT ARSAKA.
           </h1>
 
           <Link to="home" smooth={true}>
@@ -89,7 +89,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              Home
+              Beranda
             </li>
           </Link>
           <Link to="about" smooth={true}>
@@ -97,7 +97,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              About
+              Tentang
             </li>
           </Link>
 
@@ -123,7 +123,7 @@ const Navbar = () => {
           </Link>
           <Link to="contact" smooth={true} offset={-100}>
             <li onClick={handleNav} className="p-4 hover:cursor-pointer ">
-              Contact
+              Kontak
             </li>
           </Link>
         </ul>

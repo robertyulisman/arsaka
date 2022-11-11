@@ -123,7 +123,7 @@ export default function Gallery() {
             </p>
             <div className="flex justify-between items-center">
               <p className="text-gray">
-                Berikut beberapa Gallery dan Portofolio yang sudah kami
+                Berikut beberapa Gallery dan Dokumentasi yang sudah kami
                 kerjakan.
               </p>
 

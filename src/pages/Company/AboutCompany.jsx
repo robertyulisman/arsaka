@@ -10,8 +10,8 @@ const AboutCompany = ({ data }) => {
         className="w-full pt-[100px] h-[400px] flex items-center justify-center"
       >
         <Fade right>
-          <h1 className="text-white text-6xl font-bold drop-shadow-lg ">
-            ABOUT US
+          <h1 className="text-white text-6xl text-center font-bold drop-shadow-lg ">
+            TENTANG KAMI
           </h1>
         </Fade>
       </div>
