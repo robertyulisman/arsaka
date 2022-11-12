@@ -13,6 +13,15 @@ import Image10 from "../../assets/gallery/10.jpg";
 import Image11 from "../../assets/gallery/11.jpg";
 import Image12 from "../../assets/gallery/12.jpg";
 
+import arsaka1 from "../../assets/gallery/arsaka/1.jpeg";
+import arsaka2 from "../../assets/gallery/arsaka/2.jpeg";
+import arsaka3 from "../../assets/gallery/arsaka/3.jpeg";
+import arsaka4 from "../../assets/gallery/arsaka/4.jpeg";
+import arsaka5 from "../../assets/gallery/arsaka/5.jpeg";
+import arsaka6 from "../../assets/gallery/arsaka/6.jpeg";
+import arsaka7 from "../../assets/gallery/arsaka/7.jpeg";
+import arsaka8 from "../../assets/gallery/arsaka/8.jpeg";
+
 import Lightbox from "react-awesome-lightbox";
 // You need to import the CSS only once
 import "react-awesome-lightbox/build/style.css";
@@ -24,42 +33,42 @@ export default function Gallery() {
   const data = [
     {
       _id: 1,
-      image: Image1,
+      image: arsaka1,
       text: "kapal",
       delay: 0,
       ratio: "3/4",
     },
     {
       _id: 2,
-      image: Image2,
+      image: arsaka2,
       text: "kapal",
       delay: 200,
       ratio: "3/4",
     },
     {
       _id: 3,
-      image: Image3,
+      image: arsaka3,
       text: "kapal",
       delay: 500,
       ratio: "3/4",
     },
     {
       _id: 4,
-      image: Image4,
+      image: arsaka4,
       text: "kapal",
       delay: 700,
       ratio: "3/4",
     },
     {
       _id: 5,
-      image: Image5,
+      image: arsaka5,
       text: "kapal",
       delay: 700,
       ratio: "4/3",
     },
     {
       _id: 6,
-      image: Image6,
+      image: arsaka6,
       text: "kapal",
       delay: 0,
       ratio: "4/3",
@@ -67,46 +76,16 @@ export default function Gallery() {
 
     {
       _id: 7,
-      image: Image7,
+      image: arsaka7,
       text: "kapal",
       delay: 300,
       ratio: "4/3",
     },
     {
       _id: 8,
-      image: Image8,
+      image: arsaka8,
       text: "kapal",
       delay: 400,
-      ratio: "4/3",
-    },
-
-    {
-      _id: 9,
-      image: Image9,
-      text: "kapal",
-      delay: 600,
-      ratio: "4/3",
-    },
-    {
-      _id: 10,
-      image: Image10,
-      text: "kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-
-    {
-      _id: 11,
-      image: Image11,
-      text: "kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-    {
-      _id: 12,
-      image: Image12,
-      text: "kapal",
-      delay: 700,
       ratio: "4/3",
     },
   ];
@@ -153,12 +132,12 @@ export default function Gallery() {
                           setImageSelected(item);
                           setShowImage(true);
                         }}
-                        className="w-full h-full object-cover hover:cursor-pointer absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"
+                        className="w-full h-full object-cover hover:cursor-pointer absolute group-hover:scale-125 transition-all duration-500"
                         src={item.image}
                         alt={item.text}
                       />
                     </div>
-                    <span className="text-center mt-2">{item.text}</span>
+                    {/* <span className="text-center mt-2">{item.text}</span> */}
                   </div>
                 </Fade>
               ))}

@@ -1,6 +1,15 @@
 import React from "react";
 
 const Newsletter = () => {
+  const [message, setMessage] = React.useState("");
+
+  const handleSubmit = () => {
+    const noWa = "6281372413324";
+    window.open(
+      `https://api.whatsapp.com/send/?phone=${noWa}&text=${message}`,
+      "_blank"
+    );
+  };
   return (
     <section id="contact">
       <div className="w-full py-16 bg-white text-black px-4">
@@ -15,16 +24,21 @@ const Newsletter = () => {
           <div className="my-4 py-10 px-4 bg-slate-800 rounded-md">
             <div className="flex flex-col sm:flex-row items-center justify-between w-full">
               <input
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="p-3 flex w-full rounded-md text-black"
                 type="email"
                 placeholder="Tuis Pesan kamu disini"
               />
-              <button className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3">
+              <button
+                onClick={handleSubmit}
+                className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3"
+              >
                 Kirim
               </button>
             </div>
             <p className="text-white">
-            Kami peduli dengan perlindungan data Anda. silahkan Baca{" "}
+              Kami peduli dengan perlindungan data Anda. silahkan Baca{" "}
               <span className="text-[#00df9a]">Privacy Policy.</span>
             </p>
           </div>

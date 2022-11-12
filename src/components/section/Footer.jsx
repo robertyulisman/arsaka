@@ -24,7 +24,9 @@ const Footer = () => {
             ARSAKA GROUP.
           </h1>
           <p className="py-4">
-          Berpengalaman Dalam Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing.
+            Berpengalaman Dalam Mobilisasi Proyek, Bongkar Muat serta Pengurusan
+            Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan
+            Lokal dan Asing.
           </p>
           <div className="flex gap-4  md:w-[75%] my-6">
             <FaFacebookSquare
@@ -35,10 +37,10 @@ const Footer = () => {
               size={30}
               className="hover:cursor-pointer hover:text-[#C13584]"
             />
-            <FaTwitterSquare
+            {/* <FaTwitterSquare
               size={30}
               className="hover:cursor-pointer hover:text-[#00b9fb]"
-            />
+            /> */}
           </div>
         </div>
       </div>

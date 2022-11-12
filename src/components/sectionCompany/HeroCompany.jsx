@@ -10,19 +10,19 @@ const scroll = Scroll.scroller;
 const HeroCompany = ({ data }) => {
   const slides = [
     {
-      title: "We Provide all your need",
-      description: "Our Services",
+      title: "Kami Menyediakan semua kebutuhan Anda.",
+      description: "Layanan kami",
       key: "services",
     },
     {
       title:
-        "We Support Goverments Program to expand and improve the distribution of goods",
-      description: "Learn More",
+        "Kami Mendukung Program Pemerintah untuk memperluas dan meningkatkan distribusi barang.",
+      description: "Pelajari Selengkapnya",
       key: "about",
     },
     {
-      title: "Discuss your work project immediately",
-      description: "Contact Us",
+      title: "Diskusikan proyek pekerjaan Anda segera.",
+      description: "Hubungi Kami",
       key: "contact",
     },
   ];

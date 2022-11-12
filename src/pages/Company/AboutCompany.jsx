@@ -30,7 +30,7 @@ const AboutCompany = ({ data }) => {
           <Fade up>
             <div>
               <h1 className="text-2xl font-bold text-secondary-one mb-4 ">
-                OUR HISTORY
+                SEJARAH
               </h1>
               {data.tentang.map((item) => (
                 <div key={item._id}>
@@ -44,7 +44,7 @@ const AboutCompany = ({ data }) => {
           <Fade up delay={200}>
             <div className="mt-20">
               <h1 className="text-2xl font-bold text-secondary-one mb-4 ">
-                VISION
+                VISI
               </h1>
               <p className="text-[18px] text-slate-600 mb-6">{data.visi}</p>
             </div>
@@ -54,7 +54,7 @@ const AboutCompany = ({ data }) => {
           <Fade up delay={400}>
             <div className="mt-20">
               <h1 className="text-2xl font-bold text-secondary-one mb-4 ">
-                MISSION
+                MISI
               </h1>
               <p className="text-[18px] text-slate-600 mb-6">{data.misi}</p>
             </div>

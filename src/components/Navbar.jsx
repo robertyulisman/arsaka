@@ -70,13 +70,13 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
-        <div onClick={handleNav} className="block md:hidden ">
+        <div onClick={handleNav} className="block md:hidden z-[998]">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <ul
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-[100vh] border-r border-r-[#1E2734] bg-[#1E2734] ease-in-out duration-500 z-[999]"
+              ? "fixed left-0 top-0 w-[60%] h-[100vh] border-r border-r-[#1E2734] bg-[#1E2734] ease-in-out duration-500 z-[999] shadow-md"
               : "ease-in-out duration-500 fixed left-[-100%] top-0 bottom-0"
           }
         >
@@ -127,6 +127,13 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[100vw] h-[100vh] border-r border-r-[#1E2734] bg-[#1E2734] ease-in-out duration-500 z-[997] opacity-80"
+              : "hidden"
+          }
+        />
       </div>
     </nav>
   );

@@ -6,6 +6,17 @@ import Service1 from "../assets/services/1.jpg";
 import Service2 from "../assets/services/2.jpg";
 import Service3 from "../assets/services/3.jpg";
 
+import trimitra1 from "../assets/services/trimitra1.jpg";
+import trimitra2 from "../assets/services/trimitra2.jpg";
+import trimitra3 from "../assets/services/trimitra3.jpg";
+
+import Arsaka1 from "../assets/services/arsaka-service-1.jpg";
+import Arsaka2 from "../assets/services/arsaka-service-2.jpg";
+import Arsaka3 from "../assets/services/arsaka-service-3.jpg";
+import Arsaka4 from "../assets/services/arsaka-service-4.jpg";
+import Arsaka5 from "../assets/services/arsaka-service-5.jpg";
+import Arsaka6 from "../assets/services/arsaka-service-6.jpg";
+
 const company = [
   {
     _id: 1,
@@ -15,25 +26,25 @@ const company = [
     deskripsiPendek:
       "Ship Operator (LCT, Tug & Barge, Cargo Vessel), Shipping Agency, Project Mobilization",
     alamat:
-      "Jl. Sudirman Komp. Ruko DErmaga Sukajadi Blok RE No. 3 Batam, Kepulauan Riau - Indonesia 29444",
+      "Jl. Sudirman Komp. Ruko Dermaga Sukajadi Blok RE No. 3 Batam, Kepulauan Riau - Indonesia 29444",
     telephone: "+62 778 – 468205",
-    fax: "+62 778 – 427909",
+    fax: "-",
     location: {
-      lat: 1.14526,
-      lng: 104.01863,
+      lat: 1.1060185,
+      lng: 104.0270376,
     },
     tentang: [
       {
         _id: "satu",
-        teks: "PT. Arsaka was founded since 12th September 2008, Article of Association no.189 by Yondri Darto, SH is located at Sultan Abdul Rachman Blok A No. 10 – 11 Nagoya, Batam 29444.",
+        teks: "PT. Arsaka didirikan pada tanggal 27 Mei 2021 oleh Bpk Mulyono dan bertempat di Perumahan Tiban Point Blok B5 no 3A, Sekupang.",
       },
       {
         _id: "dua",
-        teks: "PT. Arsaka egistered in Batam Harbour Office by SK No. AL.002/I/2/KPL.BTM-2011 and have SIUPAL (Surat Ijin Usaha Perusahaan Angkutan Laut) no. BXXXIV.153/AT.54 was issued by Ministry of Transport Directorial General Marine Transportation.",
+        teks: "PT. Arsaka terdaftar di Batam dan memiliki SIUPKK (Surat Ijin Usaha Perusahaan Keagenan Kapal) no. AL.310/160/DA-2021 dikeluarkan oleh Dirjen Perhubungan Laut Kementerian Perhubungan.",
       },
       {
         _id: "tiga",
-        teks: "The purpose of the establishment of PT. Arsaka is to support Government’s program to expand and improve the distribution of goods, considering the territorial waters of Indonesia are very spacious with thousands of islands and thus requires a lot of support from the national shipping companies.",
+        teks: "Tujuan didirikannya PT. Arsaka adalah untuk mendukung program Pemerintah untuk memperluas dan meningkatkan distribusi barang, mengingat wilayah perairan Indonesia sangat luas dengan ribuan pulau sehingga membutuhkan banyak dukungan dari perusahaan pelayaran nasional.",
       },
     ],
     visi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
@@ -41,24 +52,45 @@ const company = [
     services: [
       {
         _id: "services-1",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Ship Operator (LCT, Tug & Barge, Cargo Vessel)",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service1,
+          "membantu perencanaan pemasukan kargo, berhubungan dengan badan pengatur, memelihara kontak pelanggan, dan menanggapi masalah yang mungkin timbul dalam pelaksanaan operasi pelayaran",
+        image: Arsaka1,
       },
       {
         _id: "services-2",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Shipping Agency",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service2,
+          "bertanggung jawab untuk menangani pengiriman dan kargo, dan kepentingan umum pelanggan, di pelabuhan dan pelabuhan di seluruh dunia, atas nama pemilik, manajer, dan penyewa kapal.",
+        image: Arsaka2,
       },
       {
         _id: "services-3",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Project Mobilization",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service3,
+          "memimpin dan mengoordinasikan semua uji tuntas Layanan Teknis, dan aktivitas mobilisasi agar tim dapat beroperasi sesuai dengan kontrak",
+        image: Arsaka3,
+      },
+      {
+        _id: "services-4",
+        judul: "International/ National Freight Forwarding",
+        deskripsi:
+          "mengerjakan logistik dan memastikan semua pangkalan tercakup dalam proses pengangkutan barang dari A ke B",
+        image: Arsaka4,
+      },
+      {
+        _id: "services-5",
+        judul: "Custom Clearance",
+        deskripsi:
+          "melibatkan persiapan dokumentasi Pabean untuk memastikan bahwa setiap pengiriman baik yang diimpor atau diekspor memenuhi semua undang-undang yang berlaku sehingga masuk atau ekspor dapat terjadi.",
+        image: Arsaka5,
+      },
+      {
+        _id: "services-6",
+        judul: "Stevedoring & Cargodoring",
+        deskripsi:
+          "membongkar barang dari kapal ke dermaga/ truk atau memuat barang dari dermaga/ truk ke dalam kapal sampai dengan tersusun dalam palka kapal dengan menggunakan derek kapal atau derek darat.",
+        image: Arsaka6,
       },
     ],
   },
@@ -70,105 +102,95 @@ const company = [
     deskripsiPendek:
       "Pengurusan Bongkar Muat Disyah Bandar, UPP, Bea Cukai, Pengurusan Pelayanan Jasa Kepabeanan, Pengurusan Perizinan BP Laut",
     alamat:
-      "Komplek Century Park Blok a No. 6, Batam Center - Batam, Kepulauan Riau",
+      "Jl. Yos Sudarso Komp. Makadam No A10 Seraya Batu Ampar, Batam, Kepulauan Riau - Indonesia",
     telephone: "+62 778 – 468205",
     fax: "+62 778 – 468205",
     location: {
-      lat: 1.14526,
-      lng: 104.01863,
+      lat: 1.1621983488690821,
+      lng: 104.0101443614103,
     },
     tentang: [
       {
         _id: "satu",
-        teks: "PT. Arsaka was founded since 12th September 2008, Article of Association no.189 by Yondri Darto, SH is located at Sultan Abdul Rachman Blok A No. 10 – 11 Nagoya, Batam 29444.",
+        teks: "PT. Madiha Kastara Sejahtera didirikan pada tanggal 24 Juli 2018 dan bertempat di Kota Batam.",
       },
       {
         _id: "dua",
-        teks: "PT. Arsaka egistered in Batam Harbour Office by SK No. AL.002/I/2/KPL.BTM-2011 and have SIUPAL (Surat Ijin Usaha Perusahaan Angkutan Laut) no. BXXXIV.153/AT.54 was issued by Ministry of Transport Directorial General Marine Transportation.",
-      },
-      {
-        _id: "tiga",
-        teks: "The purpose of the establishment of PT. Arsaka is to support Government’s program to expand and improve the distribution of goods, considering the territorial waters of Indonesia are very spacious with thousands of islands and thus requires a lot of support from the national shipping companies.",
+        teks: "Tujuan didirikannya PT. Madiha Kastara Sejahtera adalah untuk mendukung program Pemerintah untuk memperluas dan meningkatkan distribusi barang, mengingat wilayah perairan Indonesia sangat luas dengan ribuan pulau sehingga membutuhkan banyak dukungan dari perusahaan pelayaran nasional.",
       },
     ],
-    visi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
-    misi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
+    visi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
+    misi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
     services: [
       {
         _id: "services-1",
-        judul: "Cargo Transport Services Inter Island",
-        deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
+        judul: "Pelayanan Jasa Kepabeanan",
+        deskripsi: "",
         image: Service1,
       },
       {
         _id: "services-2",
-        judul: "Cargo Transport Services Inter Island",
-        deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
+        judul: "Pengurusan Perizinan BP Laut",
+        deskripsi: "",
         image: Service2,
       },
       {
         _id: "services-3",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Perusahaan Bongkar Muat",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
+          "Stevedoring, Cargodoring, Receiving/ Delivery, Bongkar Muat Disyah Bandar, UPP, Bea Cukai",
         image: Service3,
       },
     ],
   },
   {
     _id: 3,
-    key: "trimitri",
+    key: "trimitra",
     logo: LogoTrimitri,
     nama: "PT. Trimitra Mandiri Logistic",
     deskripsiPendek:
       "Pengurusan Dokumen PPFTZ 01 (TLDDP, Import/ Export), Pengurusan Dokumen PPFTZ 02, Pengurusan Dokumen PPFTZ 03",
     alamat:
-      "Komplek Century Park Blok a No. 6, Batam Center - Batam, Kepulauan Riau",
+      "Jl. Yos Sudarso Komp. Makadam No A10 Seraya Batu Ampar, Batam, Kepulauan Riau - Indonesia",
     telephone: "+62 778 – 468205",
     fax: "+62 778 – 468205",
     location: {
-      lat: 1.14526,
-      lng: 104.01863,
+      lat: 1.1621983488690821,
+      lng: 104.0101443614103,
     },
     tentang: [
       {
         _id: "satu",
-        teks: "PT. Arsaka was founded since 12th September 2008, Article of Association no.189 by Yondri Darto, SH is located at Sultan Abdul Rachman Blok A No. 10 – 11 Nagoya, Batam 29444.",
+        teks: "PT. Trimitra Mandiri Logistik didirikan pada tanggal 22 Januari 2020 dan bertempat di Kota Batam.",
       },
       {
         _id: "dua",
-        teks: "PT. Arsaka egistered in Batam Harbour Office by SK No. AL.002/I/2/KPL.BTM-2011 and have SIUPAL (Surat Ijin Usaha Perusahaan Angkutan Laut) no. BXXXIV.153/AT.54 was issued by Ministry of Transport Directorial General Marine Transportation.",
-      },
-      {
-        _id: "tiga",
-        teks: "The purpose of the establishment of PT. Arsaka is to support Government’s program to expand and improve the distribution of goods, considering the territorial waters of Indonesia are very spacious with thousands of islands and thus requires a lot of support from the national shipping companies.",
+        teks: "Tujuan didirikannya PT. Trimitra Mandiri Logistik adalah untuk mendukung program Pemerintah untuk memperluas dan meningkatkan distribusi barang, mengingat wilayah perairan Indonesia sangat luas dengan ribuan pulau sehingga membutuhkan banyak dukungan dari perusahaan pelayaran nasional.",
       },
     ],
-    visi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
-    misi: "Become one of the best shipping company on Batam in particular and Indonesia in general, by putting forward professional services.",
+    visi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
+    misi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
     services: [
       {
         _id: "services-1",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Pengurusan Dokumen PPFTZ 01",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service1,
+          "pemberitahuan pabean untuk pemasukan dan pengeluaran barang ke dan dari kawasan bebas dari dan ke luar daerah pabean, dan pengeluaran barang dari kawasan bebas ke tempat lain dalam daerah pabean",
+        image: trimitra1,
       },
       {
         _id: "services-2",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Pengurusan Dokumen PPFTZ 02",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service2,
+          "pemberitahuan pabean untuk pemasukan dan pengeluaran barang ke dan dari kawasan bebas dari dan ke tempat penimbunan berikat, kawasan bebas lainnya, dan kawasan ekonomi khusus",
+        image: trimitra2,
       },
       {
         _id: "services-3",
-        judul: "Cargo Transport Services Inter Island",
+        judul: "Pengurusan Dokumen PPFTZ 03",
         deskripsi:
-          "With the capability and experience that we have for more than three years, we expanded the territory of operations in accordance to the needs of user community services. Trajectory of long-distance and overseas marine transportation become strajectory that we serve.",
-        image: Service3,
+          "pemberitahuan pabean untuk pemasukan barang ke kawasan bebas dari tempat lain dalam daerah pabean.",
+        image: trimitra3,
       },
     ],
   },

@@ -3,6 +3,7 @@ import Typed from "react-typed";
 import Logo from "../../assets/logo.png";
 import Madiha from "../../assets/logoMadiha.png";
 import Trimitra from "../../assets/logoTrimitra.png";
+import TrimitraWhite from "../../assets/logoTrimitraWhite.png";
 
 const Hero = () => {
   return (
@@ -11,18 +12,18 @@ const Hero = () => {
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
           <div className="flex justify-center items-center gap-4 mb-4">
             <img
-              className="w-auto h-[70px]  bg-transparent hover:scale-110 hover:duration-200 hover:ease-in-out"
+              className="w-auto h-[70px] md:h-[90px]  bg-transparent hover:scale-110 hover:duration-200 hover:ease-in-out"
               src={Logo}
               alt="/"
             />
             <img
-              className="w-auto h-[70px]  bg-transparent  p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
+              className="w-auto h-[70px] md:h-[90px]  bg-transparent  p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
               src={Madiha}
               alt="/"
             />
             <img
-              className="w-auto h-[70px]   rounded-md p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
-              src={Trimitra}
+              className="w-auto h-[70px] md:h-[90px]   rounded-md p-1 hover:scale-110 hover:duration-200 hover:ease-in-out"
+              src={TrimitraWhite}
               alt="/"
             />
           </div>
@@ -39,11 +40,11 @@ const Hero = () => {
                 "PT. Trimitra Mandiri Logistik",
               ]}
               typeSpeed={120}
-              backSpeed={140}
+              backSpeed={10}
               loop
             />
           </div>
-          <p className="md:text-2xl text-xl text-white p-5 ">
+          <p className="md:text-2xl text-xl text-white p-5">
             Berpengalaman Dalam Mobilisasi Proyek, Bongkar Muat serta Pengurusan
             Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan
             Lokal dan Asing.

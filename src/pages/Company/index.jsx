@@ -21,9 +21,9 @@ const Company = () => {
         <div label="Gallery">
           <GalleryCompany data={data} />
         </div>
-        <div label="Armada">
+        {/* <div label="Armada">
           Nothing to see here, this tab is <em>extinct</em>!
-        </div>
+        </div> */}
       </Tabs>
     </div>
   );
