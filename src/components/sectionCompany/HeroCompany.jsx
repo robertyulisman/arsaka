@@ -4,25 +4,27 @@ import { Fade } from "react-reveal";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
+import { useTranslation } from "react-i18next";
+
 import Scroll from "react-scroll";
 const scroll = Scroll.scroller;
 
 const HeroCompany = ({ data }) => {
+  const { t } = useTranslation();
   const slides = [
     {
-      title: "Kami Menyediakan semua kebutuhan Anda.",
-      description: "Layanan kami",
+      title: t("slide_satu_title"),
+      description: t("slide_satu_description"),
       key: "services",
     },
     {
-      title:
-        "Kami Mendukung Program Pemerintah untuk memperluas dan meningkatkan distribusi barang.",
-      description: "Pelajari Selengkapnya",
+      title: t("slide_dua_title"),
+      description: t("slide_dua_description"),
       key: "about",
     },
     {
-      title: "Diskusikan proyek pekerjaan Anda segera.",
-      description: "Hubungi Kami",
+      title: t("slide_tiga_title"),
+      description: t("slide_tiga_description"),
       key: "contact",
     },
   ];

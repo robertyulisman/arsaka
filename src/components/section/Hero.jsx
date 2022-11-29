@@ -2,10 +2,11 @@ import React from "react";
 import Typed from "react-typed";
 import Logo from "../../assets/logo.png";
 import Madiha from "../../assets/logoMadiha.png";
-import Trimitra from "../../assets/logoTrimitra.png";
+import { useTranslation } from "react-i18next";
 import TrimitraWhite from "../../assets/logoTrimitraWhite.png";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div id="home">
       <div className="text-white bg-gradient-to-t from-[#12171f] to-[rgba(0, 0, 0, 0.2)]">
@@ -29,11 +30,8 @@ const Hero = () => {
           </div>
 
           <div className="block md:flex justify-center items-center w-full ">
-            {/* <p className="md:text-5xl sm:text-4xl text-3xl font-bold py-4 ">
-              Fast, flexible financing for
-            </p> */}
             <Typed
-              className="md:text-5xl sm:text-4xl text-4xl font-bold md:pl-4 pl-2"
+              className="md:text-5xl sm:text-4xl text-2xl font-bold md:pl-4 pl-2"
               strings={[
                 "PT. Arsaka Lintas Samudra",
                 "PT. Madiha Kastara Sejahtera",
@@ -45,9 +43,7 @@ const Hero = () => {
             />
           </div>
           <p className="md:text-2xl text-xl text-white p-5">
-            Berpengalaman Dalam Mobilisasi Proyek, Bongkar Muat serta Pengurusan
-            Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan
-            Lokal dan Asing.
+            {t("hero_title")}
           </p>
           {/* <button className="bg-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
             Get Started

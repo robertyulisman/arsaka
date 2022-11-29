@@ -1,29 +1,31 @@
 import React from "react";
 import Tabs from "../../components/Tabs";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import AboutCompany from "./AboutCompany";
 import GalleryCompany from "./GalleryCompany";
 
+import { useTranslation } from "react-i18next";
+import dataCompany from "../../utils/data";
+
 const Company = () => {
-  const { state } = useLocation();
-  const { data } = state;
+  const { t } = useTranslation();
+  const { _id } = useParams();
+
+  const data = dataCompany.find((item) => item.key === _id);
 
   return (
     <div>
       <Tabs data={data}>
-        <div label="Beranda">
+        <div label={t("home")}>
           <Dashboard data={data} />
         </div>
-        <div label="Tentang">
+        <div label={t("about")}>
           <AboutCompany data={data} />
         </div>
-        <div label="Gallery">
+        <div label={t("gallery")}>
           <GalleryCompany data={data} />
         </div>
-        {/* <div label="Armada">
-          Nothing to see here, this tab is <em>extinct</em>!
-        </div> */}
       </Tabs>
     </div>
   );

@@ -1,9 +1,25 @@
 import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
+import cookie from "js-cookie";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
+  // translate feature
+  const { t } = useTranslation();
+  const currentLanguageCode = cookie.get("i18next") || "en";
+  console.log("currentLanguageCode", currentLanguageCode);
+
+  React.useEffect(() => {
+    i18next.changeLanguage(currentLanguageCode);
+  }, []);
+
+  const handleChangeLanguage = (language) => {
+    i18next.changeLanguage(language);
+  };
+
   const [nav, setNav] = React.useState(false);
   const [backgroundwhite, setBackgroundWhite] = React.useState(false);
 
@@ -42,17 +58,17 @@ const Navbar = () => {
         <ul className="hidden md:flex">
           <Link to="home" smooth={true}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Beranda
+              {t("home")}
             </li>
           </Link>
           <Link to="about" smooth={true}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Tentang
+              {t("about")}
             </li>
           </Link>
           <Link to="group" smooth={true}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Group
+              {t("group")}
             </li>
           </Link>
 
@@ -61,15 +77,39 @@ const Navbar = () => {
           </li> */}
           <Link to="gallery" smooth={true} offset={-100}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Gallery
+              {t("gallery")}
             </li>
           </Link>
           <Link to="contact" smooth={true} offset={-100}>
             <li className="p-4 hover:cursor-pointer hover:text-[#F38E16]">
-              Kontak
+              {t("contact")}
             </li>
           </Link>
         </ul>
+
+        <div className="ml-3 hidden md:flex">
+          <button
+            className={`${
+              currentLanguageCode === "id"
+                ? "bg-white px-3 py-1 rounded-sm text-[#F38E16] font-bold"
+                : ""
+            } duration-300 ease-in-out`}
+            onClick={() => handleChangeLanguage("id")}
+          >
+            ID
+          </button>
+          <span className="mx-2">|</span>
+          <button
+            className={`${
+              currentLanguageCode === "en"
+                ? "bg-white px-3 py-1 rounded-sm text-[#F38E16] font-bold"
+                : ""
+            } duration-300 ease-in-out`}
+            onClick={() => handleChangeLanguage("en")}
+          >
+            EN
+          </button>
+        </div>
         <div onClick={handleNav} className="block md:hidden z-[998]">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
@@ -89,7 +129,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              Beranda
+              {t("home")}
             </li>
           </Link>
           <Link to="about" smooth={true}>
@@ -97,7 +137,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              Tentang
+              {t("about")}
             </li>
           </Link>
 
@@ -106,7 +146,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              Group
+              {t("group")}
             </li>
           </Link>
 
@@ -118,15 +158,16 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 border-b border-gray-600 hover:cursor-pointer "
             >
-              Gallery
+              {t("gallery")}
             </li>
           </Link>
           <Link to="contact" smooth={true} offset={-100}>
             <li onClick={handleNav} className="p-4 hover:cursor-pointer ">
-              Kontak
+              {t("contact")}
             </li>
           </Link>
         </ul>
+
         <div
           className={
             nav
@@ -134,6 +175,33 @@ const Navbar = () => {
               : "hidden"
           }
         />
+      </div>
+      <div
+        className={`ml-3 ${
+          nav ? "flex" : "hidden"
+        } md:hidden fixed bottom-3 left-0 z-[999]`}
+      >
+        <button
+          className={`${
+            currentLanguageCode === "id"
+              ? "bg-white px-3 py-1 rounded-sm text-[#F38E16] font-bold"
+              : "text-white"
+          } duration-300 ease-in-out`}
+          onClick={() => handleChangeLanguage("id")}
+        >
+          ID
+        </button>
+        <span className="mx-2 text-white">|</span>
+        <button
+          className={`${
+            currentLanguageCode === "en"
+              ? "bg-white px-3 py-1 rounded-sm text-[#F38E16] font-bold"
+              : "text-white"
+          } duration-300 ease-in-out`}
+          onClick={() => handleChangeLanguage("en")}
+        >
+          EN
+        </button>
       </div>
     </nav>
   );

@@ -1,17 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import Image1 from "../../assets/gallery/1.jpg";
-import Image2 from "../../assets/gallery/2.jpg";
-import Image3 from "../../assets/gallery/3.jpg";
-import Image4 from "../../assets/gallery/4.jpg";
-import Image5 from "../../assets/gallery/5.jpg";
-import Image6 from "../../assets/gallery/6.jpg";
-import Image7 from "../../assets/gallery/7.jpg";
-import Image8 from "../../assets/gallery/8.jpg";
-import Image9 from "../../assets/gallery/9.jpg";
-import Image10 from "../../assets/gallery/10.jpg";
-import Image11 from "../../assets/gallery/11.jpg";
-import Image12 from "../../assets/gallery/12.jpg";
+import { useTranslation } from "react-i18next";
 
 import arsaka1 from "../../assets/gallery/arsaka/1.jpeg";
 import arsaka2 from "../../assets/gallery/arsaka/2.jpeg";
@@ -21,6 +10,14 @@ import arsaka5 from "../../assets/gallery/arsaka/5.jpeg";
 import arsaka6 from "../../assets/gallery/arsaka/6.jpeg";
 import arsaka7 from "../../assets/gallery/arsaka/7.jpeg";
 import arsaka8 from "../../assets/gallery/arsaka/8.jpeg";
+
+import mks1 from "../../assets/gallery/mks/1.jpeg";
+import mks2 from "../../assets/gallery/mks/2.jpeg";
+import mks3 from "../../assets/gallery/mks/3.jpeg";
+import mks4 from "../../assets/gallery/mks/4.jpeg";
+import mks5 from "../../assets/gallery/mks/5.jpeg";
+import mks6 from "../../assets/gallery/mks/6.jpeg";
+import mks7 from "../../assets/gallery/mks/7.jpeg";
 
 import tri1 from "../../assets/gallery/trimitra/1.jpeg";
 import tri2 from "../../assets/gallery/trimitra/2.jpeg";
@@ -40,140 +37,50 @@ import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 
 export default function GalleryCompany({ data }) {
-  console.log("data", data);
+  const { t } = useTranslation();
   const [showImage, setShowImage] = React.useState(false);
   const [imageSelected, setImageSelected] = React.useState(null);
-
-  const dataPoto = [
-    {
-      _id: 1,
-      image: Image1,
-      text: "Kapal",
-      delay: 0,
-      ratio: "3/4",
-    },
-    {
-      _id: 2,
-      image: Image2,
-      text: "Kapal",
-      delay: 200,
-      ratio: "3/4",
-    },
-    {
-      _id: 3,
-      image: Image3,
-      text: "Kapal",
-      delay: 500,
-      ratio: "3/4",
-    },
-    {
-      _id: 4,
-      image: Image4,
-      text: "Kapal",
-      delay: 700,
-      ratio: "3/4",
-    },
-    {
-      _id: 5,
-      image: Image5,
-      text: "Kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-    {
-      _id: 6,
-      image: Image6,
-      text: "Kapal",
-      delay: 0,
-      ratio: "4/3",
-    },
-
-    {
-      _id: 7,
-      image: Image7,
-      text: "Kapal",
-      delay: 300,
-      ratio: "4/3",
-    },
-    {
-      _id: 8,
-      image: Image8,
-      text: "Kapal",
-      delay: 400,
-      ratio: "4/3",
-    },
-
-    {
-      _id: 9,
-      image: Image9,
-      text: "Kapal",
-      delay: 600,
-      ratio: "4/3",
-    },
-    {
-      _id: 10,
-      image: Image10,
-      text: "Kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-
-    {
-      _id: 11,
-      image: Image11,
-      text: "Kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-    {
-      _id: 12,
-      image: Image12,
-      text: "Kapal",
-      delay: 700,
-      ratio: "4/3",
-    },
-  ];
 
   const dataArsaka = [
     {
       _id: 1,
       image: arsaka1,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 0,
       ratio: "3/4",
     },
     {
       _id: 2,
       image: arsaka2,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 200,
       ratio: "3/4",
     },
     {
       _id: 3,
       image: arsaka3,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 500,
       ratio: "3/4",
     },
     {
       _id: 4,
       image: arsaka4,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 700,
       ratio: "3/4",
     },
     {
       _id: 5,
       image: arsaka5,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 700,
       ratio: "4/3",
     },
     {
       _id: 6,
       image: arsaka6,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 0,
       ratio: "4/3",
     },
@@ -181,15 +88,68 @@ export default function GalleryCompany({ data }) {
     {
       _id: 7,
       image: arsaka7,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 300,
       ratio: "4/3",
     },
     {
       _id: 8,
       image: arsaka8,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
+      ratio: "4/3",
+    },
+  ];
+
+  const dataMks = [
+    {
+      _id: 1,
+      image: mks1,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 0,
+      ratio: "3/4",
+    },
+    {
+      _id: 2,
+      image: mks2,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 200,
+      ratio: "3/4",
+    },
+    {
+      _id: 3,
+      image: mks3,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 500,
+      ratio: "3/4",
+    },
+    {
+      _id: 4,
+      image: mks4,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 700,
+      ratio: "3/4",
+    },
+    {
+      _id: 5,
+      image: mks5,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 700,
+      ratio: "4/3",
+    },
+    {
+      _id: 6,
+      image: mks6,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 0,
+      ratio: "4/3",
+    },
+
+    {
+      _id: 7,
+      image: mks7,
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
+      delay: 300,
       ratio: "4/3",
     },
   ];
@@ -198,42 +158,42 @@ export default function GalleryCompany({ data }) {
     {
       _id: 1,
       image: tri1,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 0,
       ratio: "3/4",
     },
     {
       _id: 2,
       image: tri2,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 200,
       ratio: "3/4",
     },
     {
       _id: 3,
       image: tri3,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 500,
       ratio: "3/4",
     },
     {
       _id: 4,
       image: tri4,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 700,
       ratio: "3/4",
     },
     {
       _id: 5,
       image: tri5,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 700,
       ratio: "4/3",
     },
     {
       _id: 6,
       image: tri6,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 0,
       ratio: "4/3",
     },
@@ -241,42 +201,42 @@ export default function GalleryCompany({ data }) {
     {
       _id: 7,
       image: tri7,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 300,
       ratio: "4/3",
     },
     {
       _id: 8,
       image: tri8,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
       ratio: "4/3",
     },
     {
       _id: 9,
       image: tri9,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
       ratio: "4/3",
     },
     {
       _id: 10,
       image: tri10,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
       ratio: "4/3",
     },
     {
       _id: 11,
       image: tri11,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
       ratio: "4/3",
     },
     {
       _id: 12,
       image: tri12,
-      text: "Kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing",
       delay: 400,
       ratio: "4/3",
     },
@@ -284,10 +244,13 @@ export default function GalleryCompany({ data }) {
 
   const showData = () => {
     switch (data.key) {
-      case "arsaka":
+      case " arsaka lintas samudra":
         return dataArsaka;
 
-      case "trimitra":
+      case "madiha kastara sejahtera":
+        return dataMks;
+
+      case "trimitra mandiri logistic":
         return dataTrimitra;
 
       default:
@@ -303,13 +266,10 @@ export default function GalleryCompany({ data }) {
         <div className="container mx-auto">
           <div className="text-left px-4 mb-4">
             <p className="text-[#F38E16] font-bold p-2 text-center mb-10 text-2xl">
-              GALLERY
+              {t("gallery_tag")}
             </p>
             <div className="flex justify-between items-center">
-              <p className="text-gray">
-                Berikut beberapa Gallery dan Dokumentasi yang sudah kami
-                kerjakan.
-              </p>
+              <p className="text-gray">{t("gallery_description")}</p>
 
               <button
                 className="py-2 px-8 text-primary underline hover:no-underline hover:bg-[#F38E16] hover:text-white transition-all duration-300 ease-in-out hover:rounded-md "
@@ -320,7 +280,7 @@ export default function GalleryCompany({ data }) {
                   )
                 }
               >
-                Lihat Semua
+                {t("gallery_lihat_semua")}
               </button>
             </div>
           </div>
@@ -342,7 +302,6 @@ export default function GalleryCompany({ data }) {
                         alt={item.text}
                       />
                     </div>
-                    {/* <span className="text-center mt-2">{item.text}</span> */}
                   </div>
                 </Fade>
               ))}

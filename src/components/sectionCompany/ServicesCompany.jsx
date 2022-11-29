@@ -1,18 +1,16 @@
 import React from "react";
-import Service1 from "../../assets/services/1.jpg";
-import Service2 from "../../assets/services/2.jpg";
-import Service3 from "../../assets/services/3.jpg";
 import { Fade } from "react-reveal";
-
+import { useTranslation } from "react-i18next";
 import Scroll from "react-scroll";
 const Element = Scroll.Element;
 
 const ServicesCompany = ({ data }) => {
+  const { t } = useTranslation();
   return (
     <Element id="services_company" name="services" className="w-full h-full">
       <div className="max-w-[1240px] m-auto py-20">
         <h2 className="text-center text-2xl mb-5 font-bold text-secondary-one ">
-          LAYANAN KAMI
+          {t("service_tag")}
         </h2>
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-20 p-5 md:p-10">
           {data.services.map((item, index) => (

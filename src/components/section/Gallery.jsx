@@ -1,17 +1,5 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import Image1 from "../../assets/gallery/1.jpg";
-import Image2 from "../../assets/gallery/2.jpg";
-import Image3 from "../../assets/gallery/3.jpg";
-import Image4 from "../../assets/gallery/4.jpg";
-import Image5 from "../../assets/gallery/5.jpg";
-import Image6 from "../../assets/gallery/6.jpg";
-import Image7 from "../../assets/gallery/7.jpg";
-import Image8 from "../../assets/gallery/8.jpg";
-import Image9 from "../../assets/gallery/9.jpg";
-import Image10 from "../../assets/gallery/10.jpg";
-import Image11 from "../../assets/gallery/11.jpg";
-import Image12 from "../../assets/gallery/12.jpg";
 
 import arsaka1 from "../../assets/gallery/arsaka/1.jpeg";
 import arsaka2 from "../../assets/gallery/arsaka/2.jpeg";
@@ -25,8 +13,10 @@ import arsaka8 from "../../assets/gallery/arsaka/8.jpeg";
 import Lightbox from "react-awesome-lightbox";
 // You need to import the CSS only once
 import "react-awesome-lightbox/build/style.css";
+import { useTranslation } from "react-i18next";
 
 export default function Gallery() {
+  const { t } = useTranslation();
   const [showImage, setShowImage] = React.useState(false);
   const [imageSelected, setImageSelected] = React.useState(null);
 
@@ -34,42 +24,42 @@ export default function Gallery() {
     {
       _id: 1,
       image: arsaka1,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing  ",
       delay: 0,
       ratio: "3/4",
     },
     {
       _id: 2,
       image: arsaka2,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 200,
       ratio: "3/4",
     },
     {
       _id: 3,
       image: arsaka3,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 500,
       ratio: "3/4",
     },
     {
       _id: 4,
       image: arsaka4,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 700,
       ratio: "3/4",
     },
     {
       _id: 5,
       image: arsaka5,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 700,
       ratio: "4/3",
     },
     {
       _id: 6,
       image: arsaka6,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 0,
       ratio: "4/3",
     },
@@ -77,14 +67,14 @@ export default function Gallery() {
     {
       _id: 7,
       image: arsaka7,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 300,
       ratio: "4/3",
     },
     {
       _id: 8,
       image: arsaka8,
-      text: "kapal",
+      text: "arsaka batam - Mobilisasi Proyek, Bongkar Muat serta Pengurusan Sertifikasi Kapal ( Endorsment ) untuk mendukung Mitra Perusahaan Lokal dan Asing ",
       delay: 400,
       ratio: "4/3",
     },
@@ -98,13 +88,10 @@ export default function Gallery() {
         <div className="container mx-auto">
           <div className="text-left px-4 mb-4">
             <p className="text-[#F38E16] font-bold p-2 text-center mb-10 text-2xl">
-              GALLERY
+              {t("gallery_tag")}
             </p>
             <div className="flex justify-between items-center">
-              <p className="text-gray">
-                Berikut beberapa Gallery dan Dokumentasi yang sudah kami
-                kerjakan.
-              </p>
+              <p className="text-gray">{t("gallery_description")}</p>
 
               <button
                 className="py-2 px-8 text-primary underline hover:no-underline hover:bg-[#F38E16] hover:text-white transition-all duration-300 ease-in-out hover:rounded-md "
@@ -115,7 +102,7 @@ export default function Gallery() {
                   )
                 }
               >
-                Lihat Semua
+                {t("gallery_lihat_semua")}
               </button>
             </div>
           </div>

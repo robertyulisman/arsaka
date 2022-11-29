@@ -1,8 +1,10 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 const AboutCompany = ({ data }) => {
-  console.log("data", data);
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -11,7 +13,7 @@ const AboutCompany = ({ data }) => {
       >
         <Fade right>
           <h1 className="text-white text-6xl text-center font-bold drop-shadow-lg ">
-            TENTANG KAMI
+            {t("about_tag")}
           </h1>
         </Fade>
       </div>

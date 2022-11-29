@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import Scroll from "react-scroll";
 const Element = Scroll.Element;
 
 const ContactCompany = ({ data }) => {
+  const { t } = useTranslation();
   const [message, setMessage] = React.useState("");
   const [nama, setNama] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -21,15 +24,21 @@ const ContactCompany = ({ data }) => {
     <Element name="contact" className="w-full h-[100%] py-20 bg-primary-one">
       <div className="max-w-[1240px] m-auto ">
         <h2 className="text-center text-2xl mb-8 font-bold text-secondary-one ">
-          Hubungi Kami
+          {t("hubungi_tag")}
         </h2>
         <div className="grid p-5 md:p-5 lg:p-0 md:grid-cols-2 ">
           <div>
             <h1 className="text-2xl text-white font-bold">{data.nama}</h1>
-            <h2 className="text-xl text-white mt-6 font-bold">Alamat :</h2>
+            <h2 className="text-xl text-white mt-6 font-bold">
+              {" "}
+              {t("hubungi_alamat")} :
+            </h2>
             <p className="text-white mt-2">{data.alamat}</p>
 
-            <h2 className="text-xl text-white mt-6 font-bold">Telp :</h2>
+            <h2 className="text-xl text-white mt-6 font-bold">
+              {" "}
+              {t("hubungi_Telp")} :
+            </h2>
             <p className="text-white mt-2">{data.telephone}</p>
             <h2 className="text-xl text-white mt-6 font-bold">Fax:</h2>
             <p className="text-white mt-2">{data.fax}</p>
@@ -39,7 +48,7 @@ const ContactCompany = ({ data }) => {
               <input
                 className="w-full py-3 px-4 rounded-md"
                 type="text"
-                placeholder="Name"
+                placeholder={t("hubungi_nama")}
                 value={nama}
                 onChange={(e) => setNama(e.target.value)}
               />
@@ -56,7 +65,7 @@ const ContactCompany = ({ data }) => {
               name="message"
               cols="30"
               rows="5"
-              placeholder="Message"
+              placeholder={t("hubungi_pesan")}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
@@ -64,7 +73,7 @@ const ContactCompany = ({ data }) => {
               onClick={handleSubmit}
               className="bg-[#F38E16] w-[200px] rounded-md font-medium my-4 mx-auto py-3 text-black"
             >
-              Submit
+              {t("hubungi_tombol")}
             </button>
           </div>
         </div>

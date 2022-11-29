@@ -2,9 +2,9 @@ import LogoArsaka from "../assets/logo.png";
 import LogoMadiha from "../assets/logoMadiha.png";
 import LogoTrimitri from "../assets/logoTrimitra.png";
 
-import Service1 from "../assets/services/1.jpg";
-import Service2 from "../assets/services/2.jpg";
-import Service3 from "../assets/services/3.jpg";
+import mks1 from "../assets/services/mks-1.jpg";
+import mks2 from "../assets/services/mks-2.jpeg";
+import mks3 from "../assets/services/mks-3.jpeg";
 
 import trimitra1 from "../assets/services/trimitra1.jpg";
 import trimitra2 from "../assets/services/trimitra2.jpg";
@@ -21,7 +21,7 @@ const company = [
   {
     _id: 1,
     logo: LogoArsaka,
-    key: "arsaka",
+    key: "arsaka lintas samudra",
     nama: "PT. Arsaka Lintas Samudra",
     deskripsiPendek:
       "Ship Operator (LCT, Tug & Barge, Cargo Vessel), Shipping Agency, Project Mobilization",
@@ -96,7 +96,7 @@ const company = [
   },
   {
     _id: 2,
-    key: "madiha",
+    key: "madiha kastara sejahtera",
     logo: LogoMadiha,
     nama: "PT. Madiha Kastara Sejahtera",
     deskripsiPendek:
@@ -123,29 +123,24 @@ const company = [
     misi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
     services: [
       {
-        _id: "services-1",
-        judul: "Pelayanan Jasa Kepabeanan",
-        deskripsi: "",
-        image: Service1,
-      },
-      {
         _id: "services-2",
         judul: "Pengurusan Perizinan BP Laut",
-        deskripsi: "",
-        image: Service2,
+        deskripsi:
+          "Pengurusan SPKBM, Pengurusan rekomindasi bongkar muat di terminal husus, Pengurusan pengawasan bongkar muat ",
+        image: mks2,
       },
       {
         _id: "services-3",
         judul: "Perusahaan Bongkar Muat",
         deskripsi:
           "Stevedoring, Cargodoring, Receiving/ Delivery, Bongkar Muat Disyah Bandar, UPP, Bea Cukai",
-        image: Service3,
+        image: mks3,
       },
     ],
   },
   {
     _id: 3,
-    key: "trimitra",
+    key: "trimitra mandiri logistic",
     logo: LogoTrimitri,
     nama: "PT. Trimitra Mandiri Logistic",
     deskripsiPendek:

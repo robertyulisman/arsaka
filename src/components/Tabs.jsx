@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Tab from "./Tab";
+
 import Scroll from "react-scroll";
 const scroll = Scroll.animateScroll;
 
@@ -53,6 +54,9 @@ class Tabs extends Component {
       state: { activeTab },
     } = this;
 
+    const { currentLanguageCode } = this.state;
+
+    console.log("currentLanguageCode xxxxxxxxxxx", currentLanguageCode);
     return (
       <div className="tabs">
         <div
@@ -67,20 +71,22 @@ class Tabs extends Component {
             src={this.props.data.logo}
             alt="/"
           />
-          <ol className="flex w-full items-center justify-center gap-5 py-3">
-            {children.map((child) => {
-              const { label } = child.props;
+          <div className="flex items-center w-full py-3 px-4">
+            <ol className="flex w-full items-center justify-center gap-5">
+              {children.map((child) => {
+                const { label } = child.props;
 
-              return (
-                <Tab
-                  activeTab={activeTab}
-                  key={label}
-                  label={label}
-                  onClick={onClickTabItem}
-                />
-              );
-            })}
-          </ol>
+                return (
+                  <Tab
+                    activeTab={activeTab}
+                    key={label}
+                    label={label}
+                    onClick={onClickTabItem}
+                  />
+                );
+              })}
+            </ol>
+          </div>
         </div>
 
         <div className="w-full h-full pt-[160px]">

@@ -2,20 +2,22 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Scroll from "react-scroll";
 import company from "../../utils/data";
+import { useTranslation } from "react-i18next";
 const scroll = Scroll.animateScroll;
 
 const Group = () => {
+  const { t } = useTranslation();
   const navigation = useNavigate();
 
-  const handleNavigation = (value, item) => {
-    navigation(`/company/${value}`, { state: { data: item } });
+  const handleNavigation = (item) => {
+    navigation(`/company/${item.key}`);
     scroll.scrollToTop();
   };
 
   return (
     <div id="group" className="w-full py-[10rem] px-4 bg-[#1E2734]">
       <p className="text-secondary-one text-2xl font-bold p-2 text-center mb-10">
-        GROUP KAMI
+        {t("group_tag")}
       </p>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-0 md:gap-8">
         {company.map((item) => (
@@ -30,10 +32,10 @@ const Group = () => {
               {item.deskripsiPendek}
             </p>
             <button
-              onClick={() => handleNavigation("arsaka", item)}
+              onClick={() => handleNavigation(item)}
               className="bg-[#F38E16] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-black"
             >
-              Selengkapnya
+              {t("selengkapnya")}
             </button>
           </div>
         ))}
