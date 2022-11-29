@@ -5,6 +5,8 @@ import LogoTrimitri from "../assets/logoTrimitra.png";
 import mks1 from "../assets/services/mks-1.jpg";
 import mks2 from "../assets/services/mks-2.jpeg";
 import mks3 from "../assets/services/mks-3.jpeg";
+import madiha1 from "../assets/services/madiha-1.jpg";
+import madiha2 from "../assets/services/madiha-2.jpg";
 
 import trimitra1 from "../assets/services/trimitra1.jpg";
 import trimitra2 from "../assets/services/trimitra2.jpg";
@@ -16,6 +18,7 @@ import Arsaka3 from "../assets/services/arsaka-service-3.jpg";
 import Arsaka4 from "../assets/services/arsaka-service-4.jpg";
 import Arsaka5 from "../assets/services/arsaka-service-5.jpg";
 import Arsaka6 from "../assets/services/arsaka-service-6.jpg";
+import Arsaka7 from "../assets/services/arsaka-service-7.jpg";
 
 const company = [
   {
@@ -52,23 +55,23 @@ const company = [
     services: [
       {
         _id: "services-1",
-        judul: "Ship Operator (LCT, Tug & Barge, Cargo Vessel)",
+        judul: "Chartering Services",
         deskripsi:
-          "membantu perencanaan pemasukan kargo, berhubungan dengan badan pengatur, memelihara kontak pelanggan, dan menanggapi masalah yang mungkin timbul dalam pelaksanaan operasi pelayaran",
+          "Didukung lebih dari 7 unit kapal, yang terdiri dari tipe kapal Tug Boat, Tongkang, LCT, Cargo, Supply. Dimana rata-rata umur kapal masih terbilang muda yaitu diluncurkan pada tahun 2011. Kami siap melayani kebutuhan pelanggan",
         image: Arsaka1,
       },
       {
         _id: "services-2",
         judul: "Shipping Agency",
         deskripsi:
-          "bertanggung jawab untuk menangani pengiriman dan kargo, dan kepentingan umum pelanggan, di pelabuhan dan pelabuhan di seluruh dunia, atas nama pemilik, manajer, dan penyewa kapal.",
+          "Seiring dengan kualitas sumber daya manusia yang kami miliki, layanan pendukung bisnis juga akan menjadi salah satu bisnis yang terverifikasi. Contoh jasa penunjang transportasi adalah Shipping Agency, Shipping Documentation, New Building Documentation, Custom Clearance dan Special Purpose Vessel.",
         image: Arsaka2,
       },
       {
         _id: "services-3",
-        judul: "Project Mobilization",
+        judul: "Crew Change",
         deskripsi:
-          "memimpin dan mengoordinasikan semua uji tuntas Layanan Teknis, dan aktivitas mobilisasi agar tim dapat beroperasi sesuai dengan kontrak",
+          "Mengurus keperluan pergantian Kru Kapal baik naik (Sign On), turun (Sign Off) maupun Mutasi Kru dan memfasilitasi semua kebutuhan Kru sesuai permintaan Owner",
         image: Arsaka3,
       },
       {
@@ -91,6 +94,13 @@ const company = [
         deskripsi:
           "membongkar barang dari kapal ke dermaga/ truk atau memuat barang dari dermaga/ truk ke dalam kapal sampai dengan tersusun dalam palka kapal dengan menggunakan derek kapal atau derek darat.",
         image: Arsaka6,
+      },
+      {
+        _id: "services-7",
+        judul: "Service Bunker",
+        deskripsi:
+          "Menyediakan Pengisian bahan bakar dan Air tawar melalui Ship to Ship atau Port to Ship ",
+        image: Arsaka7,
       },
     ],
   },
@@ -123,18 +133,25 @@ const company = [
     misi: "Menjadi salah satu Perusahaan Shipping Agency terbaik di Kota Batam, dengan mengedepankan jasa yang Profesional.",
     services: [
       {
+        _id: "services-1",
+        judul: "Stevedoring & Cargodoring",
+        deskripsi:
+          "membongkar barang dari kapal ke dermaga/ truk atau memuat barang dari dermaga/ truk ke dalam kapal sampai dengan tersusun dalam palka kapal dengan menggunakan derek kapal atau derek darat.",
+        image: Arsaka6,
+      },
+      {
         _id: "services-2",
         judul: "Pengurusan Perizinan BP Laut",
         deskripsi:
-          "Pengurusan SPKBM, Pengurusan rekomindasi bongkar muat di terminal husus, Pengurusan pengawasan bongkar muat ",
-        image: mks2,
+          "Pengurusan SPKBM, Pengurusan rekomindasi bongkar muat di terminal khusus, Pengurusan pengawasan bongkar muat dan Mengurus semua administrasi yang ada di Pelabuhan BP Batam sesuai dengan Undang - undang yang berlaku.",
+        image: madiha1,
       },
       {
         _id: "services-3",
-        judul: "Perusahaan Bongkar Muat",
+        judul: "Project Mobilization",
         deskripsi:
-          "Stevedoring, Cargodoring, Receiving/ Delivery, Bongkar Muat Disyah Bandar, UPP, Bea Cukai",
-        image: mks3,
+          "kami Menyediakan alat Forklift (pemindahan barang), Crane (pembongkaran barang pelabuhan ke kapal), Dump Truck (membongkar barang curah, pasir, batu granit dll), Trailer (menarik container) Dll.",
+        image: madiha2,
       },
     ],
   },
@@ -168,25 +185,19 @@ const company = [
     services: [
       {
         _id: "services-1",
-        judul: "Pengurusan Dokumen PPFTZ 01",
+        judul: "Custom Clearance",
         deskripsi:
-          "pemberitahuan pabean untuk pemasukan dan pengeluaran barang ke dan dari kawasan bebas dari dan ke luar daerah pabean, dan pengeluaran barang dari kawasan bebas ke tempat lain dalam daerah pabean",
-        image: trimitra1,
+          "melibatkan persiapan dokumentasi Pabean untuk memastikan bahwa setiap pengiriman baik yang diimpor atau diekspor memenuhi semua undang-undang yang berlaku sehingga masuk atau ekspor dapat terjadi.",
+        image: Arsaka5,
       },
       {
         _id: "services-2",
-        judul: "Pengurusan Dokumen PPFTZ 02",
+        judul: "Pengurusan Dokumen",
         deskripsi:
-          "pemberitahuan pabean untuk pemasukan dan pengeluaran barang ke dan dari kawasan bebas dari dan ke tempat penimbunan berikat, kawasan bebas lainnya, dan kawasan ekonomi khusus",
-        image: trimitra2,
+          "Pengurusan Dokumen PPFTZ 01, Pengurusan Dokumen PPFTZ 02, Pengurusan Dokumen PPFTZ 03, Pengurusan Dokumen PPFTZ 01 Import dan Barang pindah.",
+        image: trimitra1,
       },
-      {
-        _id: "services-3",
-        judul: "Pengurusan Dokumen PPFTZ 03",
-        deskripsi:
-          "pemberitahuan pabean untuk pemasukan barang ke kawasan bebas dari tempat lain dalam daerah pabean.",
-        image: trimitra3,
-      },
+      
     ],
   },
 ];
