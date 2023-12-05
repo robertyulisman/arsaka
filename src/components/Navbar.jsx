@@ -2,8 +2,8 @@ import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 
-import cookie from "js-cookie";
 import i18next from "i18next";
+import cookie from "js-cookie";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -47,11 +47,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full transition-all duration-700 z-10 ${
-        backgroundwhite ? "app__background_nav shadow-lg !py-2" : ""
+        backgroundwhite
+          ? "app__background_nav shadow-lg !py-2"
+          : "bg-black/70 backdrop-blur-sm"
       }`}
     >
       <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
-        {/* <img className="w-20 mx-auto  bg-transparent" src={Logo} alt="/" /> */}
         <h1 className="w-full text-3xl font-bold text-[#F38E16]">
           ARSAKA GROUP.
         </h1>
